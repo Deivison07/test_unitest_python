@@ -14,6 +14,10 @@ class MainTest(unittest.TestCase):
     def test_getNome(self):
         self.insta.setNome('Deivison')
         self.assertEqual(self.insta.getNome(),'Deivison')
+    
+    def tearDown(self):
+        print('terminando teste <--')
+        
 
 if __name__ == '__main__':
     unittest.main()
